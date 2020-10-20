@@ -1,0 +1,14 @@
+version: "3"
+services:
+  lep:
+      image: lep
+      ports:
+        - "8080:8080"
+      container_name: lep-container
+      tty: true
+  sfe:
+      image: sfe
+      ports:
+        - "8000:8000"
+      container_name: sfe-container
+      tty: true      
